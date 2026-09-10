@@ -20,7 +20,7 @@ una detección accionable.
 
 - **Kali Linux (VM)** — herramientas de análisis estático y dinámico
 - **Genymotion Android (VM)** — dispositivo de prueba
-- Ambas VMs en red **Host-Only** (`vboxnet0`), sin salida a la red real, para
+- Ambas VMs en red **Host-Only** (`VirtualBox Host-Only Ethernet Adapter #2`), sin salida a la red real, para
   evitar propagación de la muestra fuera del sandbox
 
 ## Estructura del repositorio
