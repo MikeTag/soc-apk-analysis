@@ -20,14 +20,30 @@ una detección accionable.
 
 - **Kali Linux (VM)** — herramientas de análisis estático y dinámico
 - **Genymotion Android (VM)** — dispositivo de prueba
-- Ambas VMs en red **Host-Only** (`VirtualBox Host-Only Ethernet Adapter #2`), sin salida a la red real, para
-  evitar propagación de la muestra fuera del sandbox
+- Ambas VMs en red **Host-Only** (`VirtualBox Host-Only Ethernet Adapter #2`),
+  sin salida a la red real, para evitar propagación de la muestra fuera del
+  sandbox
 
 ## Estructura del repositorio
 
-docs/ Informes: análisis estático, dinámico, IOCs, conclusión
-evidence/ Capturas de pantalla organizadas por fase
-detections/ Reglas de detección derivadas del análisis (YARA/Suricata)
+```
+docs/         Informes: análisis estático, dinámico, IOCs, conclusión
+evidence/     Capturas de pantalla organizadas por fase
+detections/   Reglas de detección derivadas del análisis (YARA/Suricata)
+```
+
+## Índice de documentos
+
+- [`docs/01-triage.md`](docs/01-triage.md) — Hash y verificación en VirusTotal
+- [`docs/02-analisis-estatico.md`](docs/02-analisis-estatico.md) — Permisos, código, cadenas
+- [`docs/03-analisis-dinamico.md`](docs/03-analisis-dinamico.md) — Tráfico de red, logcat
+- [`docs/04-mobsf.md`](docs/04-mobsf.md) — Validación automatizada
+- [`docs/05-iocs-mitre.md`](docs/05-iocs-mitre.md) — IOCs y mapeo MITRE ATT&CK
+- [`docs/06-conclusion.md`](docs/06-conclusion.md) — Veredicto técnico final
+
+## Detecciones
+
+- [`detections/`](detections/) — Regla YARA basada en los indicadores encontrados
 
 ## Descargo de responsabilidad
 
