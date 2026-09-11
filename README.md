@@ -50,3 +50,16 @@ detections/   Reglas de detección derivadas del análisis (YARA/Suricata)
 Proyecto con fines exclusivamente educativos, realizado en el marco de la
 asignatura *Seguridad de la Información* — Universidad Jorge Tadeo Lozano.
 No se distribuye la muestra analizada.
+
+## Nota sobre el uso de IA
+
+Este proyecto se desarrolló con el apoyo de Claude (Anthropic) como asistente
+técnico durante el proceso. Su uso se concentró en:
+- Guía en la configuración del entorno (ARM Translation, MobSF)
+- Ayuda en la interpretación de hallazgos técnicos (APKiD, permisos, MITRE ATT&CK)
+- Estructuración de la documentación
+- Elaboración de la regla YARA a partir de los IOCs identificados
+
+La ejecución de las herramientas, la toma de decisiones sobre qué investigar
+en cada fase, y la validación de los resultados (incluyendo la confirmación
+cruzada con el sandbox Triage) fueron realizadas y verificadas por el autor.
